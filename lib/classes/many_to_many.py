@@ -3,6 +3,13 @@ class Article:
         self.author = author
         self.magazine = magazine
         self.title = title
+
+
+class Article:
+    def __init__(self, author, magazine, title):
+        self.author = author
+        self.magazine = magazine
+        self.title = title        
         
 class Author:
     def __init__(self, name):
