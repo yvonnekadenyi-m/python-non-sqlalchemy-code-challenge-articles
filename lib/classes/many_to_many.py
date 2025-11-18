@@ -28,7 +28,8 @@ class Author:
 
 
     def magazines(self):
-        pass
+        return list({article.magazine for article in self.articles()})
+
 
     def add_article(self, magazine, title):
         pass
