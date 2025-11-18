@@ -44,6 +44,9 @@ class Magazine:
         self.name = name
         self.category = category
 
+     @property
+    def name(self):
+        return self._name
 
 
     def articles(self):
