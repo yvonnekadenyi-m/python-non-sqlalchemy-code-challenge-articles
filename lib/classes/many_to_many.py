@@ -44,10 +44,17 @@ class Magazine:
         self.name = name
         self.category = category
 
-     @property
+    @property
     def name(self):
         return self._name
-
+    
+    @name.setter
+    def name(self, value):
+        if not isinstance(value, str):
+            return
+        if not (2 <= len(value) <= 16):
+            return
+        self._name = value
 
     def articles(self):
         pass
