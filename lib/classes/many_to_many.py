@@ -100,6 +100,15 @@ class Magazine:
     @property
     def title(self):
         return self._title
+    
+    @title.setter
+    def title(self, value):
+
+        if not isinstance(value, str):
+            return
+        if len(value) == 0:
+            return
+        self._title = value     
  
 
 
