@@ -61,6 +61,16 @@ class Magazine:
         return self._category
     
 
+    @category.setter
+    def category(self, value):
+        if not isinstance(value, str):
+            return
+        if len(value) == 0:
+            return
+        self._category = value
+
+    
+
     def articles(self):
         pass
 
