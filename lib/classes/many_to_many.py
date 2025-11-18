@@ -87,6 +87,10 @@ class Magazine:
             if len([a for a in self.articles() if a.author == author]) > 2
         ]
         return authors if authors else None
+    
+    class Article:
+    all = []
+
 
 
 
