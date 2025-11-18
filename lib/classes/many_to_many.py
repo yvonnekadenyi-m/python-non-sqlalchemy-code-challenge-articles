@@ -12,7 +12,12 @@ class Author:
     def name(self):
         return self._name
      
-     
+    @name.setter
+    def name(self, value):
+        if hasattr(self, "_name"):
+            return
+        
+ 
 
     def articles(self):
         pass
