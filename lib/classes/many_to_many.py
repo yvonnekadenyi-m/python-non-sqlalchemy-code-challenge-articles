@@ -39,10 +39,11 @@ class Author:
         return list(topics) if topics else None
 
 
+class Magazine:
+    def __init__(self, name, category):
+        self.name = name
+        self.category = category
 
-
-    def topic_areas(self):
-        pass
 
 class Magazine:
     def __init__(self, name, category):
