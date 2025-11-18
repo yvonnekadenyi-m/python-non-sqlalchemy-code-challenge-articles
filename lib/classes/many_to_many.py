@@ -32,7 +32,8 @@ class Author:
 
 
     def add_article(self, magazine, title):
-        pass
+        return Article(self, magazine, title)
+
 
     def topic_areas(self):
         pass
