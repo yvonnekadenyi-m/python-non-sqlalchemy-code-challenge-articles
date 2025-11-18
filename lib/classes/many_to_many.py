@@ -110,13 +110,3 @@ class Magazine:
             return
         self._title = value     
  
-
-
-    def contributors(self):
-        pass
-
-    def article_titles(self):
-        pass
-
-    def contributing_authors(self):
-        pass
