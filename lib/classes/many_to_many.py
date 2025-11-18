@@ -16,7 +16,11 @@ class Author:
     def name(self, value):
         if hasattr(self, "_name"):
             return
-        
+        if not isinstance(value, str):
+            return
+        if len(value) == 0:
+            return
+        self._name = value
  
 
     def articles(self):
