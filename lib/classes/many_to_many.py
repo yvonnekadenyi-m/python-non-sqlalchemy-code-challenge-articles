@@ -56,6 +56,11 @@ class Magazine:
             return
         self._name = value
 
+    @property
+    def category(self):
+        return self._category
+    
+
     def articles(self):
         pass
 
