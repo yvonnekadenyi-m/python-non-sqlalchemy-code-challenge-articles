@@ -3,7 +3,7 @@ class Article:
         self.author = author
         self.magazine = magazine
         self.title = title
-        
+
 class Author:
     def __init__(self, name):
         self.name = name
@@ -12,10 +12,7 @@ class Author:
     def name(self):
         return self._name
      
-        
-class Author:
-    def __init__(self, name):
-        self.name = name
+     
 
     def articles(self):
         pass
