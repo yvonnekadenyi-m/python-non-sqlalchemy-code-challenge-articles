@@ -69,10 +69,12 @@ class Magazine:
             return
         self._category = value
 
-    
 
     def articles(self):
-        pass
+        return [article for article in Article.all if article.magazine == self]
+
+
+
 
     def contributors(self):
         pass
