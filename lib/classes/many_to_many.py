@@ -33,6 +33,12 @@ class Author:
 
     def add_article(self, magazine, title):
         return Article(self, magazine, title)
+    
+    def topic_areas(self):
+        topics = {mag.category for mag in self.magazines()}
+        return list(topics) if topics else None
+
+
 
 
     def topic_areas(self):
