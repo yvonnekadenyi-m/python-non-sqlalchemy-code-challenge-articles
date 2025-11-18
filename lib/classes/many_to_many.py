@@ -45,10 +45,6 @@ class Magazine:
         self.category = category
 
 
-class Magazine:
-    def __init__(self, name, category):
-        self.name = name
-        self.category = category
 
     def articles(self):
         pass
